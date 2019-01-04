@@ -1,0 +1,9 @@
+type,requiredLevel,lowerMin,lowerMax,upperMin,upperMax,nameaddedPhysDmg,2,1,1,2,3,Glinting
+addedPhysDmg,13,4,5,8,9,Burnished
+addedPhysDmg,21,6,8,13,15,Polished
+addedPhysDmg,29,7,11,16,19,Honed
+addedPhysDmg,36,9,13,20,24,Gleaming
+addedPhysDmg,46,13,17,26,30,Annealed
+addedPhysDmg,54,14,19,29,35,Razor-Sharp
+addedPhysDmg,65,17,24,36,41,Tempered
+addedPhysDmg,20,27,41,49,Flairing
