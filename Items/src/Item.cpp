@@ -10,4 +10,8 @@ Item::Item(int newiLevel, int newRarity, int newReqLevel, int newReqDex, int new
     requiredInt = newReqInt;
 }
 
+Item::Item(){
+    
+}
+
     

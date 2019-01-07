@@ -1,6 +1,6 @@
-addedAccuracyRating 1,5,15,0,0,Calm
+addedAccuracyRating 1 15 15 0 0 Calm
 addedAccuracyRating 12 16 60 0 0 Steadiness
-addedAccuracyRating 20 6 100 0 0 Accuracy
+addedAccuracyRating 20 61 100 0 0 Accuracy
 addedAccuracyRating 26 101 130 0 0 Precision
 addedAccuracyRating 33 131 165 0 0 The-Sniper
 addedAccuracyRating 41 166 200 0 0 The-Marksman
