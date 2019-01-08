@@ -14,4 +14,10 @@ Item::Item(){
     
 }
 
+void Item::transmute(){
+    std::default_random_engine generator;
+    std::uniform_int_distribution<int> distribution(1,6);
+    int dice_roll = distribution(generator);
+}
+
     

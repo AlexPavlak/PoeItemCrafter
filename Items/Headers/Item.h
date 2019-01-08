@@ -1,15 +1,16 @@
 #ifndef ITEM_H
 #define ITEM_H
 
-#include <list>
+#include <vector>
+#include <random>
 #include "../../Mods/Headers/Mod.h"
 
 class Item{
 protected:
 int itemLevel;
 int rarity;
-std::list <Mod> prefix;
-std::list <Mod> suffix;
+std::vector <Mod> prefix;
+std::vector <Mod> suffix;
 int requiredLevel;
 int requiredDex;
 int requiredStr;

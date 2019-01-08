@@ -23,13 +23,12 @@ void JeweledFoil::printItem(){
     std::cout <<"Crit Chance: " << critChance << std::endl;
     
     std::cout <<"Prefixes:" << std::endl;
-    for(std::list<Mod>::iterator it = basePrefix.begin(); it != basePrefix.end(); it++){
-        std::cout << it->name << std::endl;
+    for(int i = 0; i < basePrefix.size(); i++){
+        std::cout << basePrefix[i].name << std::endl;
     }
 
-    std::cout <<"Suffixes:" << std::endl;
-    for(std::list<Mod>::iterator it = baseSuffix.begin(); it != baseSuffix.end(); it++){
-        std::cout << it->name << std::endl;
+    for(int i = 0; i < baseSuffix.size(); i++){
+        std::cout << baseSuffix[i].name << std::endl;
     }
 
     std::cout <<"Implicit: " << implicit << std::endl;

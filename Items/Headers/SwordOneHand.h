@@ -4,14 +4,15 @@
 #include <string>
 #include <sstream>
 #include <iostream>
+#include <vector>
 #include "./Weapon.h"
 
 class SwordOneHand : public Weapon{
 
     protected:
 
-    std::list <Mod> basePrefix;
-    std::list <Mod> baseSuffix;
+    std::vector <Mod> basePrefix;
+    std::vector <Mod> baseSuffix;
 
     public:
     SwordOneHand();
