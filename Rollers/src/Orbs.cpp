@@ -8,8 +8,9 @@ void Orbs::transmute(Item &item, std::vector<Mod> &rollingPrefixes, std::vector<
         return;
     }
 
+    unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
     item.rarity = 2;
-    std::default_random_engine generator;
+    std::default_random_engine generator(seed);
     std::uniform_int_distribution<int> oneOrTwo(1,2);
     std::uniform_int_distribution<int> prefixDist(0,rollingPrefixes.size() - 1);
     std::uniform_int_distribution<int> suffixDist(0,rollingSuffixes.size() - 1);
@@ -21,13 +22,13 @@ void Orbs::transmute(Item &item, std::vector<Mod> &rollingPrefixes, std::vector<
             //roll a prefix
             int prefixToAdd = prefixDist(generator);
             std::cout<<"prefixToAdd is: " << prefixToAdd << std::endl;
-            std::cout <<"adding " <<rollingPrefixes[prefixToAdd].name<<"to prefixes"<<std::endl;
+            std::cout <<"adding " <<rollingPrefixes[prefixToAdd].name<<" to prefixes"<<std::endl;
             item.prefix.push_back(rollingPrefixes[prefixToAdd]);
         }else{
             //roll a suffix
             int suffixToAdd = suffixDist(generator);
             std::cout <<"suffixToAdd is: " << suffixToAdd << std::endl;
-            std::cout <<"adding " <<rollingSuffixes[suffixToAdd].name<<"to suffixes"<<std::endl;
+            std::cout <<"adding " <<rollingSuffixes[suffixToAdd].name<<" to suffixes"<<std::endl;
             item.suffix.push_back(rollingSuffixes[suffixToAdd]);
         }
     }else{
@@ -36,10 +37,10 @@ void Orbs::transmute(Item &item, std::vector<Mod> &rollingPrefixes, std::vector<
         int suffixToAdd = suffixDist(generator);
         std::cout <<"suffixToAdd is: " << suffixToAdd << std::endl;
 
-        std::cout <<"adding " <<rollingPrefixes[prefixToAdd].name<<"to prefixes"<<std::endl;
+        std::cout <<"adding " <<rollingPrefixes[prefixToAdd].name<<" to prefixes"<<std::endl;
         item.prefix.push_back(rollingPrefixes[prefixToAdd]);
 
-        std::cout <<"adding " <<rollingSuffixes[suffixToAdd].name<<"to suffixes"<<std::endl;
+        std::cout <<"adding " <<rollingSuffixes[suffixToAdd].name<<" to suffixes"<<std::endl;
         item.suffix.push_back(rollingSuffixes[suffixToAdd]);
     }
 }
