@@ -11,13 +11,9 @@ Item::Item(int newiLevel, int newRarity, int newReqLevel, int newReqDex, int new
 }
 
 Item::Item(){
-    
+    rarity = 1;
 }
 
-void Item::transmute(){
-    std::default_random_engine generator;
-    std::uniform_int_distribution<int> distribution(1,6);
-    int dice_roll = distribution(generator);
-}
+
 
     

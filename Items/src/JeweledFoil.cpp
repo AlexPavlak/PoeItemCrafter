@@ -22,13 +22,19 @@ void JeweledFoil::printItem(){
     std::cout <<"Attack Speed: " << attackSpeed << std::endl;
     std::cout <<"Crit Chance: " << critChance << std::endl;
     
-    std::cout <<"Prefixes:" << std::endl;
-    for(int i = 0; i < basePrefix.size(); i++){
-        std::cout << basePrefix[i].name << std::endl;
+    
+    if(prefix.size() > 0 ){
+        std::cout <<"Prefixes: " << std::endl;
+        for(int i = 0; i < prefix.size(); i++){
+            std::cout << prefix[i].name << std::endl;
+        }
     }
 
-    for(int i = 0; i < baseSuffix.size(); i++){
-        std::cout << baseSuffix[i].name << std::endl;
+    if(suffix.size() > 0){
+        std::cout<<"Suffixes: " << std::endl;
+        for(int i = 0; i < suffix.size(); i++){
+            std::cout << suffix[i].name << std::endl;
+        }
     }
 
     std::cout <<"Implicit: " << implicit << std::endl;

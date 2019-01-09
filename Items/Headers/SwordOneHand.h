@@ -9,12 +9,12 @@
 
 class SwordOneHand : public Weapon{
 
-    protected:
+    public:
 
     std::vector <Mod> basePrefix;
     std::vector <Mod> baseSuffix;
 
-    public:
+    
     SwordOneHand();
 
 };
