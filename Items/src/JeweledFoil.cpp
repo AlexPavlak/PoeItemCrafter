@@ -7,6 +7,8 @@ JeweledFoil::JeweledFoil(int newLevel){
     critChance = 5.5f;
     attackSpeed = 1.6f;
     itemLevel = newLevel;
+    fillPrefix();
+    fillSuffix();
 }
 
 void JeweledFoil::printItem(){
@@ -25,14 +27,14 @@ void JeweledFoil::printItem(){
     
     if(prefix.size() > 0 ){
         std::cout <<"Prefixes: " << std::endl;
-        for(int i = 0; i < prefix.size(); i++){
+        for(unsigned int i = 0; i < prefix.size(); i++){
             std::cout << prefix[i].name << std::endl;
         }
     }
 
     if(suffix.size() > 0){
         std::cout<<"Suffixes: " << std::endl;
-        for(int i = 0; i < suffix.size(); i++){
+        for(unsigned int i = 0; i < suffix.size(); i++){
             std::cout << suffix[i].name << std::endl;
         }
     }

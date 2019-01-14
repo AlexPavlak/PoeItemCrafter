@@ -17,6 +17,9 @@ class SwordOneHand : public Weapon{
     
     SwordOneHand();
 
+    void fillPrefix();
+    void fillSuffix();
+
 };
 
 #endif
