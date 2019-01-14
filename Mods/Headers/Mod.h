@@ -8,16 +8,16 @@ class Mod{
     protected:
     std::string type;
     int requiredLevel;
-    int lowerMin;
-    int lowerMax;
-    int upperMin;
-    int upperMax;
+    float lowerMin;
+    float lowerMax;
+    float upperMin;
+    float upperMax;
     
 
     public:
     std::string name;
-    Mod(std::string newType, int newRequiredLevel, int newLowerMin, int newLowerMax,
-        int newUpperMin, int newUpperMax, std::string newName);
+    Mod(std::string newType, int newRequiredLevel, float newLowerMin, float newLowerMax,
+        float newUpperMin, float newUpperMax, std::string newName);
 
 };
 
