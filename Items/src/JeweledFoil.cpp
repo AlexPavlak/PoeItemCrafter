@@ -4,6 +4,10 @@ JeweledFoil::JeweledFoil(int newLevel){
     implicit = "+25\% to Global Critical Strike Multiplier";
     minDmg = 32;
     maxDmg = 60;
+    requiredLevel = 68;
+    requiredDex = 212;
+    requiredInt = 0;
+    requiredStr = 0;
     critChance = 5.5f;
     attackSpeed = 1.6f;
     itemLevel = newLevel;
