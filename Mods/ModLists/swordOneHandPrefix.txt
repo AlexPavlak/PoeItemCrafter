@@ -6,4 +6,8 @@ addedPhysDmg 36 9 13 20 24 Gleaming
 addedPhysDmg 46 13 17 26 30 Annealed
 addedPhysDmg 54 14 19 29 35 Razor-Sharp
 addedPhysDmg 65 17 24 36 41 Tempered
-addedPhysDmg 77 27 41 49 Flairing
+addedPhysDmg 77 20 27 41 49 Flairing
+
+
+
+

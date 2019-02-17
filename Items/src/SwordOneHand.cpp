@@ -9,11 +9,11 @@ void SwordOneHand::fillPrefix(){
 
     std::string currentLine;
     std::string type;
-    int requiredLevel;
-    int lowerMin;
-    int lowerMax;
-    int upperMin;
-    int upperMax;
+    float requiredLevel;
+    float lowerMin;
+    float lowerMax;
+    float upperMin;
+    float upperMax;
     std::string name;
     std::ifstream prefixes;
 
@@ -39,11 +39,11 @@ void SwordOneHand::fillSuffix(){
 
     std::string currentLine;
     std::string type;
-    int requiredLevel;
-    int lowerMin;
-    int lowerMax;
-    int upperMin;
-    int upperMax;
+    float requiredLevel;
+    float lowerMin;
+    float lowerMax;
+    float upperMin;
+    float upperMax;
     std::string name;
     std::ifstream suffixes;
 

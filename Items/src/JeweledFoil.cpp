@@ -24,9 +24,9 @@ void JeweledFoil::printItem(){
     std::cout << "Required Str: " << requiredStr << std::endl;
     std::cout << "Required Int: " << requiredInt << std::endl;
 
-    std::cout <<"Damage: " << minDmg << "-" << maxDmg << std::endl;
-    std::cout <<"Attack Speed: " << attackSpeed << std::endl;
-    std::cout <<"Crit Chance: " << critChance << std::endl;
+    std::cout << "Damage: " << minDmg << "-" << maxDmg << std::endl;
+    std::cout << "Attack Speed: " << attackSpeed << std::endl;
+    std::cout << "Crit Chance: " << critChance << std::endl;
     
     
     if(prefix.size() > 0 ){
@@ -44,4 +44,5 @@ void JeweledFoil::printItem(){
     }
 
     std::cout <<"Implicit: " << implicit << std::endl;
+    std::cout << modList << std::endl;
 }

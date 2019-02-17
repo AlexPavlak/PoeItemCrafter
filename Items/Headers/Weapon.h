@@ -2,16 +2,19 @@
 #define WEAPON_H
 #include "./Item.h"
 
-class Weapon : public Item{
+class ModGenerator;
+class Weapon:public Item{
 
     protected:
-    int minDmg;
-    int maxDmg;
+    ModGenerator *modGenerator;
     float attackSpeed;
     float critChance;
 
     public:
     Weapon();
+    void applyMods();
+    int minDmg;
+    int maxDmg;
 
 };
 #endif

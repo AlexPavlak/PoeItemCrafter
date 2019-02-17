@@ -11,3 +11,6 @@ Mod::Mod(std::string newType, int newRequiredLevel, float newLowerMin, float new
             upperMax = newUpperMax;
             name = newName;
         }
+Mod::Mod(){
+    
+}

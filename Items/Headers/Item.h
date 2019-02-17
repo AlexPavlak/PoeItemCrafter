@@ -4,6 +4,7 @@
 #include <vector>
 #include <random>
 #include "../../Mods/Headers/Mod.h"
+//#include "../../Mods/Headers/WeaponHeaders.h"
 
 class Item{
 
@@ -16,6 +17,7 @@ int requiredLevel;
 int requiredDex;
 int requiredStr;
 int requiredInt;
+std::string modList;
 
 
 Item();
