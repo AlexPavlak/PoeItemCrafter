@@ -1,9 +1,15 @@
 #include <iostream>
 #include "./Items/Headers/JeweledFoil.h"
+#include "./Rollers/Headers/Orbs.h"
 
 int main(){
 
-    JeweledFoil myFoil(65);
+    Orbs orbs;
+    JeweledFoil myFoil(83);
+    orbs.transmute(myFoil, myFoil.basePrefix, myFoil.baseSuffix);
+    std::cout <<"applying mods" <<std::endl;
+    myFoil.applyMods();
 
+    std::cout<<"printing item"<<std::endl;
     myFoil.printItem();
 }

@@ -9,7 +9,7 @@ class ModGenerator{
 
     public:
 
-    static void modCreatorAndApplier(Mod mod, Weapon* weapon);
+    static void modCreatorAndApplier(Mod mod, Weapon& weapon);
 
 };
 

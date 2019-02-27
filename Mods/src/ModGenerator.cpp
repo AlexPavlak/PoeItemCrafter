@@ -1,20 +1,21 @@
 #include "../Headers/ModGenerator.h"
 #include "../../Items/Headers/Weapon.h"
 
-void ModGenerator::modCreatorAndApplier(Mod mod, Weapon* weapon){
+void ModGenerator::modCreatorAndApplier(Mod mod, Weapon& weapon){
 
-        if(mod.name == "addedPhysDmg"){
-
+        if(mod.type == "addedPhysDmg"){
+        std::cout <<"generating damage mod\n";
         AddedPhysDmg addedPhysDmg(mod);
+        std::cout<<"applying dmg mod\n";
         addedPhysDmg.applyToItem(weapon);
-        delete(&addedPhysDmg);
         return;
     }
 
-    if(mod.name == "addedAccuracyRating"){
+    if(mod.type == "addedAccuracyRating"){
+        std::cout <<"generating accuracy mod\n";
         AddedAccuracyRating addedAccuracyRating(mod);
+        std::cout <<"applying accuracy mod\n";
         addedAccuracyRating.applyToItem(weapon);
-        delete(&addedAccuracyRating);
         return;
     }
 }

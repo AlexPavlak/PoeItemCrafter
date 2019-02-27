@@ -8,11 +8,11 @@ AddedPhysDmg::AddedPhysDmg(Mod base){
 
 }
 
-void AddedPhysDmg::applyToItem(Weapon* weapon){
-    weapon->minDmg += addedMin;
-    weapon->maxDmg += addedMax;
+void AddedPhysDmg::applyToItem(Weapon& weapon){
+    weapon.minDmg += addedMin;
+    weapon.maxDmg += addedMax;
 
     std::string modString = "Adds " + std::to_string(addedMin) + " to " + std::to_string(addedMax) + " to attacks\n";
-    weapon->modList += modString;
+    weapon.modList.append(modString);
 
 }

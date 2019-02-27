@@ -1,6 +1,7 @@
 #ifndef WEAPON_H
 #define WEAPON_H
 #include "./Item.h"
+#include <iostream>
 
 class ModGenerator;
 class Weapon:public Item{

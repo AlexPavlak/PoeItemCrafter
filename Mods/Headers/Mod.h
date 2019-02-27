@@ -7,12 +7,13 @@
 class Mod{
 
     protected:
-    std::string type;
+    
     int requiredLevel;
 
     
 
     public:
+    std::string type;
     float lowerMin;
     float lowerMax;
     float upperMin;

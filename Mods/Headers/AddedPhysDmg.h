@@ -11,7 +11,7 @@ class AddedPhysDmg : public Mod{
     int addedMax;
 
     public:
-    void applyToItem(Weapon *weapon);
+    void applyToItem(Weapon& weapon);
     AddedPhysDmg(Mod base);
  
 };
