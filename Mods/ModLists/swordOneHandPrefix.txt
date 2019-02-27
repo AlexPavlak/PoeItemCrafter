@@ -7,7 +7,28 @@ addedPhysDmg 46 13 17 26 30 Annealed
 addedPhysDmg 54 14 19 29 35 Razor-Sharp
 addedPhysDmg 65 17 24 36 41 Tempered
 addedPhysDmg 77 20 27 41 49 Flairing
-
+increasedPhysDmg 1 40 49 0 0 Heavy
+increasedPhysDmg 11 50 64 0 0 Serrated
+increasedPhysDmg 23 65 84 0 0 Wicked
+increasedPhysDmg 35 85 109 0 0 Vicious
+increasedPhysDmg 46 110 134 0 0 Bloodthirsty
+increasedPhysDmg 60 135 154 0 0 Cruel
+increasedPhysDmg 73 155 169 0 0 Tyrannical
+increasedPhysDmg 83 170 179 0 0 Merciles
+increasedPhysDmgAndAddedAccuracy 1 15 19 3 7 Squire
+increasedPhysDmgAndAddedAccuracy 11 20 24 8 30 Journeyman
+increasedPhysDmgAndAddedAccuracy 23 25 34 31 50 Reaver
+increasedPhysDmgAndAddedAccuracy 35 35 44 51 64 Mercenary
+increasedPhysDmgAndAddedAccuracy 46 45 54 65 82 Champion
+increasedPhysDmgAndAddedAccuracy 60 55 64 83 99 Conqueror
+increasedPhysDmgAndAddedAccuracy 73 65 74 100 134 Emperor
+increasedPhysDmgAndAddedAccuracy 83 75 79 135 169 Dictator
+plusToGemLvl 50 1 0 0 0 Paragon
+plusToMeleeGemLvl 8 1 0 0 0 Combatant
+plusToMeleeGemLvl 63 2 0 0 0 Weaponmaster
+physDmgLifeLeach 50 0.2 0.4 0 0 Remora
+physDmgLifeLeach 60 0.6 0.8 0 0 Lamprey
+physDmgLifeLeach 70 1.0 1.2 0 0 Vampire
 
 
 

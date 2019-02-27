@@ -23,8 +23,6 @@ void SwordOneHand::fillPrefix(){
     while(prefixes >> type >> requiredLevel >> lowerMin >> lowerMax >> upperMin >> upperMax >> name){
 
         if(itemLevel >= requiredLevel){
-            std::cout << "Item Level is " << itemLevel << std::endl;
-            std::cout << "Adding " << name << " to the prefix list." << std::endl;
             Mod newMod(type,requiredLevel,lowerMin,lowerMax,upperMin,upperMax,name);
             basePrefix.push_back(newMod);
         } 
@@ -52,7 +50,6 @@ void SwordOneHand::fillSuffix(){
     while(suffixes >> type >> requiredLevel >> lowerMin >> lowerMax >> upperMin >> upperMax >> name){
 
         if(itemLevel >= requiredLevel){
-            std::cout << "Adding " << name << " to the suffix list." << std::endl;
             Mod newMod(type,requiredLevel,lowerMin,lowerMax,upperMin,upperMax,name);
             baseSuffix.push_back(newMod);
         }        

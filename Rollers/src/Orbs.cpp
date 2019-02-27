@@ -21,26 +21,18 @@ void Orbs::transmute(Item &item, std::vector<Mod> &rollingPrefixes, std::vector<
         if(prefixOrSuffix == 1){
             //roll a prefix
             int prefixToAdd = prefixDist(generator);
-            std::cout<<"prefixToAdd is: " << prefixToAdd << std::endl;
-            std::cout <<"adding " <<rollingPrefixes[prefixToAdd].name<<" to prefixes"<<std::endl;
             item.prefix.push_back(rollingPrefixes[prefixToAdd]);
         }else{
             //roll a suffix
             int suffixToAdd = suffixDist(generator);
-            std::cout <<"suffixToAdd is: " << suffixToAdd << std::endl;
-            std::cout <<"adding " <<rollingSuffixes[suffixToAdd].name<<" to suffixes"<<std::endl;
             item.suffix.push_back(rollingSuffixes[suffixToAdd]);
         }
     }else{
         int prefixToAdd = prefixDist(generator);
-        std::cout<<"prefixToAdd is: " << prefixToAdd << std::endl;
         int suffixToAdd = suffixDist(generator);
-        std::cout <<"suffixToAdd is: " << suffixToAdd << std::endl;
 
-        std::cout <<"adding " <<rollingPrefixes[prefixToAdd].name<<" to prefixes"<<std::endl;
         item.prefix.push_back(rollingPrefixes[prefixToAdd]);
 
-        std::cout <<"adding " <<rollingSuffixes[suffixToAdd].name<<" to suffixes"<<std::endl;
         item.suffix.push_back(rollingSuffixes[suffixToAdd]);
     }
 }
