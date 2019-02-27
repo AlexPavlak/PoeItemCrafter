@@ -1,6 +1,9 @@
 #include "../Headers/ModGenerator.h"
 #include "../../Items/Headers/Weapon.h"
 
+//Mod Factory
+//Takes a base Mod from an item and turns it into the appropriate mod.
+//Once created the mod is applied to the item directly then deleted. 
 void ModGenerator::modCreatorAndApplier(Mod mod, Weapon& weapon){
 
         if(mod.type == "addedPhysDmg"){

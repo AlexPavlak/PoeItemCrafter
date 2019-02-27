@@ -8,6 +8,8 @@ AddedPhysDmg::AddedPhysDmg(Mod base){
 
 }
 
+//The AddedPhysDmg mod will modify the weapons base damage directly.
+//It will also add its mod description to the 
 void AddedPhysDmg::applyToItem(Weapon& weapon){
     weapon.minDmg += addedMin;
     weapon.maxDmg += addedMax;
