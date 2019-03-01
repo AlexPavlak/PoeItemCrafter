@@ -14,6 +14,21 @@ Item::Item(){
     rarity = 1;
 }
 
+//Getters and Setters for member variables
+void Item::setItemLevel(int newLevel){itemLevel = newLevel;}
+
+int Item::getItemLevel(){return itemLevel;}
+
+void Item::setRarity(int newRarity){rarity = newRarity;}
+
+int Item::getRarity(){return rarity;}
+
+void Item::setItemLevel(int newLevel){itemLevel = newLevel;}
+
+int Item::getItemLevel(){return itemLevel;}
+
+
+
 
 
     

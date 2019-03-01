@@ -8,22 +8,31 @@
 
 class Item{
 
-public:
+private:
+
 int itemLevel;
 int rarity;
-std::vector <Mod> prefix;
-std::vector <Mod> suffix;
 int requiredLevel;
 int requiredDex;
 int requiredStr;
 int requiredInt;
+
+public:
+std::vector <Mod> prefix;
+std::vector <Mod> suffix;
 std::string modList;
 
-
+//Constructors
 Item();
 Item(int newiLevel, int newRarity, int newReqLevel, 
      int newReqDex, int newReqStr, int newReqInt);
 
-
+//Getters and setters
+void setItemLevel(int);
+int getItemLevel();
+void setRarity(int);
+int getRarity();
+void setRequiredLevel(int);
+int getRequiredLevel();
 };
 #endif
