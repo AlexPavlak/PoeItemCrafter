@@ -39,7 +39,27 @@ void Item::setRequiredInt(int newInt){requiredStr = newInt;}
 
 int Item::getRequiredInt(){return requiredInt;}
 
+std::string Item::getModList(){return modList;}
 
+void Item::addToModList(std::string newMod){
+    modList += newMod;
+}
+
+const std::vector<Mod>& Item::getPrefix(){return prefix;}
+
+void Item::addToPrefix(Mod mod){prefix.push_back(mod);}
+
+const std::vector<Mod>& Item::getSuffix(){return suffix;}
+
+void Item::addToSuffix(Mod mod){suffix.push_back(mod);}
+
+int Item::getPrefixSize(){return prefix.size();}
+
+int Item::getSuffixSize(){return suffix.size();}
+
+Mod Item::getPrefixAt(int position){return prefix[position];}
+
+Mod Item::getSuffixAt(int position){return suffix[position];}
 
 
     

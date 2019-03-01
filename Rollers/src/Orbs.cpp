@@ -2,6 +2,8 @@
 
 void Orbs::transmute(Item &item, std::vector<Mod> &rollingPrefixes, std::vector<Mod> &rollingSuffixes){
 
+    //Transmutation orb should only be applid to normal items. If it is not 
+    //normal do not transmute. 
     if(item.getRarity() != 1){
 
         std::cout << "Item is not normal, can not transmute." << std::endl;
@@ -28,19 +30,19 @@ void Orbs::transmute(Item &item, std::vector<Mod> &rollingPrefixes, std::vector<
         if(prefixOrSuffix == 1){
             //roll a prefix
             int prefixToAdd = prefixDist(generator);
-            item.prefix.push_back(rollingPrefixes[prefixToAdd]);
+            item.addToPrefix(rollingPrefixes[prefixToAdd]);
         }else{
             //roll a suffix
             int suffixToAdd = suffixDist(generator);
-            item.suffix.push_back(rollingSuffixes[suffixToAdd]);
+            item.addToSuffix(rollingSuffixes[suffixToAdd]);
         }
     //We are rolling and adding 2 mods, 1 prefix, 1 suffix to the item. 
     }else{
         int prefixToAdd = prefixDist(generator);
         int suffixToAdd = suffixDist(generator);
 
-        item.prefix.push_back(rollingPrefixes[prefixToAdd]);
+        item.addToPrefix(rollingPrefixes[prefixToAdd]);
 
-        item.suffix.push_back(rollingSuffixes[suffixToAdd]);
+        item.addToSuffix(rollingSuffixes[suffixToAdd]);
     }
 }

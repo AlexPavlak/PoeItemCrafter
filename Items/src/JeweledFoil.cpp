@@ -29,20 +29,20 @@ void JeweledFoil::printItem(){
     std::cout << "Crit Chance: " << critChance << std::endl;
     
     
-    if(prefix.size() > 0 ){
+    if(getPrefixSize() > 0 ){
         std::cout <<"Prefixes: " << std::endl;
-        for(unsigned int i = 0; i < prefix.size(); i++){
-            std::cout << prefix[i].name << std::endl;
+        for(unsigned int i = 0; i < getPrefixSize(); i++){
+            std::cout << getPrefixAt(i).name << std::endl;
         }
     }
 
-    if(suffix.size() > 0){
+    if(getSuffixSize() > 0){
         std::cout<<"Suffixes: " << std::endl;
-        for(unsigned int i = 0; i < suffix.size(); i++){
-            std::cout << suffix[i].name << std::endl;
+        for(unsigned int i = 0; i < getSuffixSize(); i++){
+            std::cout << getSuffixAt(i).name << std::endl;
         }
     }
 
     std::cout <<"Implicit: " << implicit << std::endl;
-    std::cout << modList << std::endl;
+    std::cout << getModList() << std::endl;
 }

@@ -16,11 +16,11 @@ int requiredLevel;
 int requiredDex;
 int requiredStr;
 int requiredInt;
-
-public:
+std::string modList;
 std::vector <Mod> prefix;
 std::vector <Mod> suffix;
-std::string modList;
+
+public:
 
 //Constructors
 Item();
@@ -40,5 +40,15 @@ void setRequiredStr(int);
 int getRequiredStr();
 void setRequiredInt(int);
 int getRequiredInt();
+std::string getModList();
+void addToModList(std::string);
+const std::vector<Mod>& getPrefix();
+void addToPrefix(Mod mod);
+const std::vector<Mod>& getSuffix();
+void addToSuffix(Mod mod);
+int getPrefixSize();
+int getSuffixSize();
+Mod getPrefixAt(int);
+Mod getSuffixAt(int);
 };
 #endif
