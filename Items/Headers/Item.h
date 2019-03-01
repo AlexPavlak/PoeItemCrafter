@@ -34,5 +34,11 @@ void setRarity(int);
 int getRarity();
 void setRequiredLevel(int);
 int getRequiredLevel();
+void setRequiredDex(int);
+int getRequiredDex();
+void setRequiredStr(int);
+int getRequiredStr();
+void setRequiredInt(int);
+int getRequiredInt();
 };
 #endif

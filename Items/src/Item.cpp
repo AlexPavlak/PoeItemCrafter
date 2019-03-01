@@ -23,10 +23,21 @@ void Item::setRarity(int newRarity){rarity = newRarity;}
 
 int Item::getRarity(){return rarity;}
 
-void Item::setItemLevel(int newLevel){itemLevel = newLevel;}
+void Item::setRequiredLevel(int newLevel){itemLevel = newLevel;}
 
-int Item::getItemLevel(){return itemLevel;}
+int Item::getRequiredLevel(){return itemLevel;}
 
+void Item::setRequiredDex(int newDex){requiredDex = newDex;}
+
+int Item::getRequiredDex(){return requiredDex;}
+
+void Item::setRequiredStr(int newStr){requiredStr = newStr;}
+
+int Item::getRequiredStr(){return requiredStr;}
+
+void Item::setRequiredInt(int newInt){requiredStr = newInt;}
+
+int Item::getRequiredInt(){return requiredInt;}
 
 
 
