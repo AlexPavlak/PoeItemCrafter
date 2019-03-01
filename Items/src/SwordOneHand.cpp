@@ -23,7 +23,7 @@ void SwordOneHand::fillPrefix(){
     if(!prefixes.is_open()) std::cout<<"File didnt open" << std::endl;
     while(prefixes >> type >> requiredLevel >> lowerMin >> lowerMax >> upperMin >> upperMax >> name){
 
-        if(itemLevel >= requiredLevel){
+        if(this->getItemLevel() >= requiredLevel){
             Mod newMod(type,requiredLevel,lowerMin,lowerMax,upperMin,upperMax,name);
             basePrefix.push_back(newMod);
         } 
@@ -52,7 +52,7 @@ void SwordOneHand::fillSuffix(){
     if(!suffixes.is_open()) std::cout<<"File didnt open" << std::endl;
     while(suffixes >> type >> requiredLevel >> lowerMin >> lowerMax >> upperMin >> upperMax >> name){
 
-        if(itemLevel >= requiredLevel){
+        if(this->getItemLevel() >= requiredLevel){
             Mod newMod(type,requiredLevel,lowerMin,lowerMax,upperMin,upperMax,name);
             baseSuffix.push_back(newMod);
         }        
