@@ -19,4 +19,14 @@ void Weapon::applyMods(){
     }
 }
 
+void Weapon::setMinDmg(int newMin){minDmg = newMin;}
+
+int Weapon::getMinDmg(){return minDmg;}
+
+void Weapon::setMaxDmg(int newMax){maxDmg = newMax;}
+
+int Weapon::getMaxDmg(){return maxDmg;}
+
+
+
 
