@@ -15,3 +15,7 @@ void AddedAccuracyRating::applyToItem(Weapon& weapon){
     std::string modString = "Adds " + std::to_string(addedAccuracy) + " to accuracy rating\n";
     weapon.addToModList(modString);
 }
+
+int AddedAccuracyRating::getAddedAccuracy(){return addedAccuracy;}
+
+void AddedAccuracyRating::setAddedAccuracy(int newAcc){addedAccuracy = newAcc;}

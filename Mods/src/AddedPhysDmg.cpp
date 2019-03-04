@@ -18,3 +18,11 @@ void AddedPhysDmg::applyToItem(Weapon& weapon){
     weapon.addToModList(modString);
 
 }
+
+int AddedPhysDmg::getAddedMin(){return addedMin;}
+
+void AddedPhysDmg::setAddedMin(int newMin){addedMin = newMin;}
+
+int AddedPhysDmg::getAddedMax(){return addedMax;}
+
+void AddedPhysDmg::setAddedMax(int newMax){addedMax = newMax;}
