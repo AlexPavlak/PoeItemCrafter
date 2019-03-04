@@ -7,10 +7,14 @@
 
 class JeweledFoil:public SwordOneHand{
 
-    public:
+    protected:
     std::string implicit;
+
+    public:
     JeweledFoil(int);
     void printItem();
+    std::string getImplicit();
+    void setImplicit(std::string);
 
 
 };

@@ -46,3 +46,7 @@ void JeweledFoil::printItem(){
     std::cout <<"Implicit: " << implicit << std::endl;
     std::cout << getModList() << std::endl;
 }
+
+std::string JeweledFoil::getImplicit(){return implicit;}
+
+void JeweledFoil::setImplicit(std::string newImplicit){implicit = newImplicit;}
