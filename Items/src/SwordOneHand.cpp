@@ -23,7 +23,7 @@ void SwordOneHand::fillPrefix(){
     if(!prefixes.is_open()) std::cout<<"File didnt open" << std::endl;
     while(prefixes >> type >> requiredLevel >> lowerMin >> lowerMax >> upperMin >> upperMax >> name){
 
-        if(itemLevel >= requiredLevel){
+        if(this->getItemLevel() >= requiredLevel){
             Mod newMod(type,requiredLevel,lowerMin,lowerMax,upperMin,upperMax,name);
             basePrefix.push_back(newMod);
         } 
@@ -52,7 +52,7 @@ void SwordOneHand::fillSuffix(){
     if(!suffixes.is_open()) std::cout<<"File didnt open" << std::endl;
     while(suffixes >> type >> requiredLevel >> lowerMin >> lowerMax >> upperMin >> upperMax >> name){
 
-        if(itemLevel >= requiredLevel){
+        if(this->getItemLevel() >= requiredLevel){
             Mod newMod(type,requiredLevel,lowerMin,lowerMax,upperMin,upperMax,name);
             baseSuffix.push_back(newMod);
         }        
@@ -61,3 +61,19 @@ void SwordOneHand::fillSuffix(){
     suffixes.close();
 
 }
+
+const std::vector<Mod>& SwordOneHand::getBasePrefix(){return basePrefix;}
+
+void SwordOneHand::addToBasePrefix(Mod mod){basePrefix.push_back(mod);}
+
+const std::vector<Mod>& SwordOneHand::getBaseSuffix(){return baseSuffix;}
+
+void SwordOneHand::addToBaseSuffix(Mod mod){baseSuffix.push_back(mod);}
+
+int SwordOneHand::getBasePrefixSize(){return basePrefix.size();}
+
+int SwordOneHand::getBaseSuffixSize(){return baseSuffix.size();}
+
+Mod SwordOneHand::getBasePrefixAt(int position){ return basePrefix[position];}
+
+Mod SwordOneHand::getBaseSuffixAt(int position){return baseSuffix[position];}

@@ -10,12 +10,17 @@ class Weapon:public Item{
     ModGenerator *modGenerator;
     float attackSpeed;
     float critChance;
+    int minDmg;
+    int maxDmg;
 
     public:
     Weapon();
     void applyMods();
-    int minDmg;
-    int maxDmg;
+    void setMinDmg(int);
+    int getMinDmg();
+    void setMaxDmg(int);
+    int getMaxDmg();
+    
 
 };
 #endif

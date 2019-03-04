@@ -13,7 +13,10 @@ class AddedPhysDmg : public Mod{
     public:
     void applyToItem(Weapon& weapon);
     AddedPhysDmg(Mod base);
- 
+    int getAddedMin();
+    void setAddedMin(int);
+    int getAddedMax();
+    void setAddedMax(int);
 };
 
 #endif

@@ -5,7 +5,7 @@
 AddedAccuracyRating::AddedAccuracyRating(Mod base){
 
     Rollers roller;
-    addedAccuracy = roller.boundedIntRoller(base.lowerMin, base.lowerMax);    
+    addedAccuracy = roller.boundedIntRoller(base.getLowerMin(), base.getLowerMax());    
 }
 
 //THe AddedAcuracyRating mod has no values that will affect the item directly
@@ -13,5 +13,9 @@ AddedAccuracyRating::AddedAccuracyRating(Mod base){
 void AddedAccuracyRating::applyToItem(Weapon& weapon){
 
     std::string modString = "Adds " + std::to_string(addedAccuracy) + " to accuracy rating\n";
-    weapon.modList += modString;
+    weapon.addToModList(modString);
 }
+
+int AddedAccuracyRating::getAddedAccuracy(){return addedAccuracy;}
+
+void AddedAccuracyRating::setAddedAccuracy(int newAcc){addedAccuracy = newAcc;}

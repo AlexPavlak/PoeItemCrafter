@@ -14,7 +14,8 @@ class AddedAccuracyRating : public Mod{
     public:
     void applyToItem(Weapon& weapon);
     AddedAccuracyRating(Mod base);
-
+    int getAddedAccuracy();
+    void setAddedAccuracy(int);
 };
 
 #endif
