@@ -9,7 +9,7 @@
 class Orbs{
 
     public:
-    static void transmute(Item &item, std::vector<Mod> &rollingPrefixes, std::vector<Mod> &rollingSuffixes);
+    static void transmute(Item &item, std::vector<Mod> rollingPrefixes, std::vector<Mod> rollingSuffixes);
 };
 
 #endif

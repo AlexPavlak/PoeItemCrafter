@@ -61,3 +61,19 @@ void SwordOneHand::fillSuffix(){
     suffixes.close();
 
 }
+
+const std::vector<Mod>& SwordOneHand::getBasePrefix(){return basePrefix;}
+
+void SwordOneHand::addToBasePrefix(Mod mod){basePrefix.push_back(mod);}
+
+const std::vector<Mod>& SwordOneHand::getBaseSuffix(){return baseSuffix;}
+
+void SwordOneHand::addToBaseSuffix(Mod mod){baseSuffix.push_back(mod);}
+
+int SwordOneHand::getBasePrefixSize(){return basePrefix.size();}
+
+int SwordOneHand::getBaseSuffixSize(){return baseSuffix.size();}
+
+Mod SwordOneHand::getBasePrefixAt(int position){ return basePrefix[position];}
+
+Mod SwordOneHand::getBaseSuffixAt(int position){return baseSuffix[position];}

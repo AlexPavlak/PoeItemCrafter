@@ -1,6 +1,6 @@
 #include "../Headers/Orbs.h"
 
-void Orbs::transmute(Item &item, std::vector<Mod> &rollingPrefixes, std::vector<Mod> &rollingSuffixes){
+void Orbs::transmute(Item &item, std::vector<Mod> rollingPrefixes, std::vector<Mod> rollingSuffixes){
 
     //Transmutation orb should only be applid to normal items. If it is not 
     //normal do not transmute. 
