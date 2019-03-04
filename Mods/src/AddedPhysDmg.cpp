@@ -3,8 +3,8 @@
 
 AddedPhysDmg::AddedPhysDmg(Mod base){
     Rollers roller;
-    addedMin = roller.boundedIntRoller(base.lowerMin, base.lowerMax);
-    addedMax = roller.boundedIntRoller(base.upperMin, base.upperMax);
+    addedMin = roller.boundedIntRoller(base.getLowerMin(), base.getLowerMax());
+    addedMax = roller.boundedIntRoller(base.getUpperMin(), base.getUpperMax());
 
 }
 

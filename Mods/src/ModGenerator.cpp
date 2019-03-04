@@ -6,13 +6,13 @@
 //Once created the mod is applied to the item directly then deleted. 
 void ModGenerator::modCreatorAndApplier(Mod mod, Weapon& weapon){
 
-        if(mod.type == "addedPhysDmg"){
+        if(mod.getType() == "addedPhysDmg"){
         AddedPhysDmg addedPhysDmg(mod);
         addedPhysDmg.applyToItem(weapon);
         return;
     }
 
-    if(mod.type == "addedAccuracyRating"){
+    if(mod.getType() == "addedAccuracyRating"){
         AddedAccuracyRating addedAccuracyRating(mod);
         addedAccuracyRating.applyToItem(weapon);
         return;

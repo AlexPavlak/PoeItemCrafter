@@ -5,7 +5,7 @@
 AddedAccuracyRating::AddedAccuracyRating(Mod base){
 
     Rollers roller;
-    addedAccuracy = roller.boundedIntRoller(base.lowerMin, base.lowerMax);    
+    addedAccuracy = roller.boundedIntRoller(base.getLowerMin(), base.getLowerMax());    
 }
 
 //THe AddedAcuracyRating mod has no values that will affect the item directly

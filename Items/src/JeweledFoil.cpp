@@ -32,14 +32,14 @@ void JeweledFoil::printItem(){
     if(getPrefixSize() > 0 ){
         std::cout <<"Prefixes: " << std::endl;
         for(unsigned int i = 0; i < getPrefixSize(); i++){
-            std::cout << getPrefixAt(i).name << std::endl;
+            std::cout << getPrefixAt(i).getName() << std::endl;
         }
     }
 
     if(getSuffixSize() > 0){
         std::cout<<"Suffixes: " << std::endl;
         for(unsigned int i = 0; i < getSuffixSize(); i++){
-            std::cout << getSuffixAt(i).name << std::endl;
+            std::cout << getSuffixAt(i).getName() << std::endl;
         }
     }
 
