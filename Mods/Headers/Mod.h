@@ -7,21 +7,33 @@
 class Mod{
 
     protected:
-    
-    int requiredLevel;
-
-    
-
-    public:
     std::string type;
+    std::string name;
+    int requiredLevel;
     float lowerMin;
     float lowerMax;
     float upperMin;
     float upperMax;
-    std::string name;
+    
+    public:  
     Mod();
     Mod(std::string newType, int newRequiredLevel, float newLowerMin, float newLowerMax,
     float newUpperMin, float newUpperMax, std::string newName);
+    std::string getType();//
+    void setType(std::string);//
+    std::string getName(); //
+    void setName(std::string);//
+    int getReqLvl();
+    void setReqLvl(int);
+    float getLowerMin();
+    void setLowerMin(float);
+    float getLowerMax();
+    void setLowerMax(float);
+    float getUpperMin();
+    void setUpperMin(float);
+    float getUpperMax();
+    void setUpperMax(float);
+
 
 };
 
