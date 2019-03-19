@@ -3,5 +3,6 @@
 
 #include "./AddedAccuracyRating.h"
 #include "./AddedPhysDmg.h"
+#include "./IncreasedPhysDmg.h"
 
 #endif
