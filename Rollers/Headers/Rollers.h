@@ -7,8 +7,6 @@
 class Rollers{
 
     private:
-    unsigned seed;
-    std::default_random_engine generator;
     std::random_device rd;
     std::mt19937 mt;
 
