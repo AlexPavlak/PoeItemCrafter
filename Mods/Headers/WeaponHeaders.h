@@ -6,5 +6,6 @@
 #include "./IncreasedPhysDmg.h"
 #include "./IncreasedPhysDmgAndAddedAccuracy.h"
 #include "./PlusToGemLevel.h"
+#include "./PlusToMeleeGemLevel.h"
 
 #endif

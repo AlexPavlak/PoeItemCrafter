@@ -35,4 +35,10 @@ void ModGenerator::modCreatorAndApplier(Mod mod, Weapon& weapon){
         plusToGemLevel.applyToItem(weapon);
         return;
     }
+
+    if(mod.getType() == "plusToMeleeGemLvl"){
+        PlusToMeleeGemLevel plusToMeleeGemLevel(mod);
+        plusToMeleeGemLevel.applyToItem(weapon);
+        return;
+    }
 }
