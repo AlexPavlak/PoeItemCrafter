@@ -7,5 +7,6 @@
 #include "./IncreasedPhysDmgAndAddedAccuracy.h"
 #include "./PlusToGemLevel.h"
 #include "./PlusToMeleeGemLevel.h"
+#include "./PhysDmgLifeLeech.h"
 
 #endif

@@ -41,4 +41,10 @@ void ModGenerator::modCreatorAndApplier(Mod mod, Weapon& weapon){
         plusToMeleeGemLevel.applyToItem(weapon);
         return;
     }
+
+    if(mod.getType() == "physDmgLifeLeech"){
+        PhysDmgLifeLeech physDmgLifeLeech(mod);
+        physDmgLifeLeech.applyToItem(weapon);
+        return;
+    }
 }

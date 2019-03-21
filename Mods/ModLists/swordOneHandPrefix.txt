@@ -26,9 +26,9 @@ increasedPhysDmgAndAddedAccuracy 83 75 79 135 169 Dictator
 plusToGemLvl 50 1 0 0 0 Paragon
 plusToMeleeGemLvl 8 1 0 0 0 Combatant
 plusToMeleeGemLvl 63 2 0 0 0 Weaponmaster
-physDmgLifeLeach 50 0.2 0.4 0 0 Remora
-physDmgLifeLeach 60 0.6 0.8 0 0 Lamprey
-physDmgLifeLeach 70 1.0 1.2 0 0 Vampire
+physDmgLifeLeech 50 0.2 0.4 0 0 Remora
+physDmgLifeLeech 60 0.6 0.8 0 0 Lamprey
+physDmgLifeLeech 70 1.0 1.2 0 0 Vampire
 
 
 
