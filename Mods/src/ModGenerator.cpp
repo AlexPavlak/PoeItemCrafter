@@ -23,4 +23,10 @@ void ModGenerator::modCreatorAndApplier(Mod mod, Weapon& weapon){
         increasedPhysDmg.applyToItem(weapon);
         return;
     }
+
+    if(mod.getType() == "increasedPhysDmgAndAddedAccuracy"){
+        IncreasedPhysDmgAndAddedAccuracy increasedPhysDmgAndAddedAccuracy(mod);
+        increasedPhysDmgAndAddedAccuracy.applyToItem(weapon);
+        return;
+    }
 }
