@@ -29,4 +29,10 @@ void ModGenerator::modCreatorAndApplier(Mod mod, Weapon& weapon){
         increasedPhysDmgAndAddedAccuracy.applyToItem(weapon);
         return;
     }
+
+    if(mod.getType() == "plusToGemLvl"){
+        PlusToGemLevel plusToGemLevel(mod);
+        plusToGemLevel.applyToItem(weapon);
+        return;
+    }
 }
