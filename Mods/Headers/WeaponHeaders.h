@@ -4,5 +4,6 @@
 #include "./AddedAccuracyRating.h"
 #include "./AddedPhysDmg.h"
 #include "./IncreasedPhysDmg.h"
+#include "./IncreasedPhysDmgAndAddedAccuracy.h"
 
 #endif
