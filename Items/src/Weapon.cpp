@@ -27,6 +27,9 @@ void Weapon::setMaxDmg(int newMax){maxDmg = newMax;}
 
 int Weapon::getMaxDmg(){return maxDmg;}
 
+void Weapon::setAttackSpeed(float newSpeed){ attackSpeed = newSpeed;}
+
+float Weapon::getAttackSpeed(){ return attackSpeed;}
 
 
 

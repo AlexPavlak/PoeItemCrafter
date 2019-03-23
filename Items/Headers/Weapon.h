@@ -20,6 +20,8 @@ class Weapon:public Item{
     int getMinDmg();
     void setMaxDmg(int);
     int getMaxDmg();
+    void setAttackSpeed(float);
+    float getAttackSpeed();
     
 
 };
