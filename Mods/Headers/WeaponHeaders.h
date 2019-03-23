@@ -8,5 +8,6 @@
 #include "./PlusToGemLevel.h"
 #include "./PlusToMeleeGemLevel.h"
 #include "./PhysDmgLifeLeech.h"
+#include "./AddedStats.h"
 
 #endif

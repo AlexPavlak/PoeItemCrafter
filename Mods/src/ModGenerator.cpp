@@ -47,4 +47,10 @@ void ModGenerator::modCreatorAndApplier(Mod mod, Weapon& weapon){
         physDmgLifeLeech.applyToItem(weapon);
         return;
     }
+
+    if(mod.getType() == "addedStrength" || mod.getType() == "addedDexterity"){
+        AddedStats addedStats(mod);
+        addedStats.applyToItem(weapon);
+        return;
+    }
 }
