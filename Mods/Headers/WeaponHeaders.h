@@ -9,5 +9,6 @@
 #include "./PlusToMeleeGemLevel.h"
 #include "./PhysDmgLifeLeech.h"
 #include "./AddedStats.h"
+#include "./IncreasedAttackSpeed.h"
 
 #endif

@@ -53,4 +53,10 @@ void ModGenerator::modCreatorAndApplier(Mod mod, Weapon& weapon){
         addedStats.applyToItem(weapon);
         return;
     }
+
+    if(mod.getType() == "increasedAttackSpeed"){
+        IncreasedAttackSpeed increasedAttackSpeed(mod);
+        increasedAttackSpeed.applyToItem(weapon);
+        return;
+    }
 }
