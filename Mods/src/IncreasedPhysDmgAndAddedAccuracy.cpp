@@ -9,13 +9,14 @@ IncreasedPhysDmgAndAddedAccuracy::IncreasedPhysDmgAndAddedAccuracy(Mod base){
 }
 
 void IncreasedPhysDmgAndAddedAccuracy::applyToItem(Weapon& weapon){
-    int increasedMinDmg = weapon.getMinDmg() * (increasedPhys / 100);
-    int increasedMaxDmg = weapon.getMaxDmg() * (increasedPhys / 100);
+    float increasedPercent = (float) increasedPhys / 100;
+    int increasedMinDmg = (int) weapon.getMinDmg() * increasedPercent;
+    int increasedMaxDmg = (int) weapon.getMaxDmg() * increasedPercent;
 
     weapon.setMinDmg(weapon.getMinDmg() + increasedMinDmg);
     weapon.setMaxDmg(weapon.getMaxDmg() + increasedMaxDmg);
 
-    std::string modString = std::to_string(increasedMinDmg) + "\% increased physical damage\n";
+    std::string modString = std::to_string(increasedPhys) + "\% increased physical damage\n";
     modString = modString + "Adds " + std::to_string(addedAccuracy) + " to accuracy rating\n";
     weapon.addToModList(modString);
 

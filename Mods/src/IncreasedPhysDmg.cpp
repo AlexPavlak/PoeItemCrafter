@@ -7,8 +7,9 @@ IncreasedPhysDmg::IncreasedPhysDmg(Mod base){
 }
 
 void IncreasedPhysDmg::applyToItem(Weapon& weapon){
-    int increasedMin = weapon.getMinDmg() * (increasedDmgPercent / 100);
-    int increasedMax = weapon.getMaxDmg() * (increasedDmgPercent / 100);
+    float increasedPercent = (float) increasedDmgPercent / 100;
+    int increasedMin = (int) weapon.getMinDmg() * increasedPercent;
+    int increasedMax = (int) weapon.getMaxDmg() * increasedPercent;
 
     weapon.setMinDmg(weapon.getMinDmg() + increasedMin);
     weapon.setMaxDmg(weapon.getMaxDmg() + increasedMax);
