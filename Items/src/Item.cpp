@@ -35,7 +35,7 @@ void Item::setRequiredStr(int newStr){requiredStr = newStr;}
 
 int Item::getRequiredStr(){return requiredStr;}
 
-void Item::setRequiredInt(int newInt){requiredStr = newInt;}
+void Item::setRequiredInt(int newInt){requiredInt = newInt;}
 
 int Item::getRequiredInt(){return requiredInt;}
 
