@@ -98,9 +98,9 @@ lightRadiusAndAcc 8 5 0 10 20 Of_Shining
 lightRadiusAndAcc 15 10 0 21 40 Of_the_Light 
 lightRadiusAndAcc 30 15 0 5 10 Of_Radiance
 increasedPoisonDur 30 8 12 0 0 Of_Rot 
-increasedPoisonDur 60 13 18 Of_Putrefaction
+increasedPoisonDur 60 13 18 0 0 Of_Putrefaction
 increasedBleedDur 30 8 12 0 0 Of_Agony
-increasedBleedDur 60 13 18 Of_Torment
+increasedBleedDur 60 13 18 0 0 Of_Torment
 chanceToBleed 15 10 0 0 0 Of_Bleeding
 chanceToBleed 55 15 0 0 0 Of_Flaying
 chanceToBleed 85 20 0 0 0 Of_Hemorrhaging
