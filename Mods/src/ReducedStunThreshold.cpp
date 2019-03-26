@@ -7,7 +7,7 @@ ReducedStunThreshold::ReducedStunThreshold(Mod base){
 }
 
 void ReducedStunThreshold::applyToItem(Weapon& weapon){
-    std::string modString = std::to_string(reducedThreshold) + "\% reduced enemy stun threshold";
+    std::string modString = std::to_string(reducedThreshold) + "\% reduced enemy stun threshold\n";
     weapon.addToModList(modString);
 
 }
