@@ -64,4 +64,11 @@ void ModGenerator::modCreatorAndApplier(Mod mod, Weapon& weapon){
         ReducedStunThreshold reducedStunThreshold(mod);
         reducedStunThreshold.applyToItem(weapon);
     }
+
+    if(mod.getType() == "fireResistance" || mod.getType() =="coldResistance" || 
+                   mod.getType() == "lightningResistance" || mod.getType() == "chaosResistance"){
+        Resistances resistances(mod);
+        resistances.applyToItem(weapon);
+
+    }
 }
