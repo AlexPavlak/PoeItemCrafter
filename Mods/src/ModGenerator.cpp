@@ -59,4 +59,9 @@ void ModGenerator::modCreatorAndApplier(Mod mod, Weapon& weapon){
         increasedAttackSpeed.applyToItem(weapon);
         return;
     }
+
+    if(mod.getType() == "reducedStunThreshold"){
+        ReducedStunThreshold reducedStunThreshold(mod);
+        reducedStunThreshold.applyToItem(weapon);
+    }
 }

@@ -10,5 +10,6 @@
 #include "./PhysDmgLifeLeech.h"
 #include "./AddedStats.h"
 #include "./IncreasedAttackSpeed.h"
+#include "./ReducedStunThreshold.h"
 
 #endif
