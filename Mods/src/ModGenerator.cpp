@@ -71,4 +71,9 @@ void ModGenerator::modCreatorAndApplier(Mod mod, Weapon& weapon){
         resistances.applyToItem(weapon);
 
     }
+
+    if(mod.getType() == "stunDuration"){
+        StunDuration stunDuration(mod);
+        stunDuration.applyToItem(weapon);
+    }
 }

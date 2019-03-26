@@ -12,5 +12,6 @@
 #include "./IncreasedAttackSpeed.h"
 #include "./ReducedStunThreshold.h"
 #include "./Resistances.h"
+#include "./StunDuration.h"
 
 #endif
